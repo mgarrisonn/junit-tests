@@ -29,11 +29,11 @@ public class StudentTest {
         assertSame(78, michael.getGrades().get(1));
     }
 
-//    @Test
-//    public void testAverageGrade(){
-//        Student michael = new Student(1, "michael");
-//        michael.addGrade(98);
-//        michael.addGrade(88);
-//        assertSame(78, michael.getGradeAverage(), 0);
-//    }
+    @Test
+    public void testAverageGrade(){
+        Student michael = new Student(1, "michael");
+        michael.addGrade(98);
+        michael.addGrade(88);
+        assertEquals(78, michael.getGradeAverage(), 0);
+    }
 }
